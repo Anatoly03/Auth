@@ -1,3 +1,9 @@
+# Sources:
+
+https://www.youtube.com/watch?v=mbsmsi7l3r4&t=347s
+
+# Ignore
+
 interesting subdomain thing:
 
 - https://www.npmjs.com/package/express-subdomain
