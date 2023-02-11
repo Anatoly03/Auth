@@ -1,0 +1,46 @@
+POST http://localhost:8081/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "abc123"
+}
+
+# Returns refresh and access token.
+
+###
+
+DELETE http://localhost:8081/auth/logout
+Content-Type: application/json
+
+{
+    "token": "REFRESH_TOKEN"
+}
+
+# Logs out a user.
+
+###
+
+POST http://localhost:8081/auth/token
+Content-Type: application/json
+
+{
+    "token": "REFRESH_TOKEN"
+}
+
+# Returns access token.
+
+###
+
+GET http://localhost:8081/api/board/0
+Authorization: Bearer ACCESS_TOKEN
+
+# Example of providing token to authenticate.
+
+###
+
+GET http://localhost:8081/api/forum/
+
+# Retrieves general information about the forum.
+
+###
